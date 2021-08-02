@@ -11,7 +11,7 @@
 				$pass = getenv('CLOUDSQL_PASSWORD');
 				$inst = getenv('CLOUDSQL_DSN');
 				$db = getenv('CLOUDSQL_DB');
-				$conn = mysqli_connect( myphpapp-321304.uc.r.appspot.com, $user, $pass, $db, null, $inst);
+				$conn = mysqli_connect( null, $user, $pass, $db, null, $inst);
 			/*	$now = new DateTime();
 				$mins = $now->getOffset() / 60;
 				$sgn = ($mins < 0 ? -1 : 1);
